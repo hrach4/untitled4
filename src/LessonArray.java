@@ -59,10 +59,30 @@ public class LessonArray {
             System.out.println("*");
         }
 */
+/*
+        int nums[] = new int[10];
+        int m = 0;
+        for (int i = 0; i < 10; i++) {
+            double x = Math.random() * 100;
+            nums[i] = (int) x;
+        }
+        for (int v = 0; v < 10; v++) {
 
 
+            for (int k = 0; k < 9; k++) {
+                if (nums[k] > nums[k + 1]) {
+                    m = nums[k];
+                    nums[k] = nums[k + 1];
+                    nums[k + 1] = m;
+                }
+            }
+        }
+        for (int b = 0; b < 10; b++) {
 
 
+            System.out.println(nums[b]);
+        }
+*/
 
     }
 }

@@ -152,19 +152,86 @@ public class day7homework {
         }
 */
         //14
-
-        int n = scan.nextInt();
-        for (int i = 2; i <= n + 1; i++) {
-            for (int j = 2; j <= n + 1; j++) {
-                if (j % 2 == 0) {
-                    System.out.print("#");
-                } else {
-                    System.out.print(" ");
+/*
+        int n = scan.nextInt(), x = 0, y = 0;
+        for (int i = 0; i <= n; i++) {
+            for (int j = 0; j <= n; j++) {
+                y++;
+                if (y % 2 == 0) System.out.print("#");
+                else {
+                    System.out.print("  ");
                 }
             }
-System.out.println();
-            }
-
-
+            System.out.println();
         }
+*/
+        //15
+/*
+        int x = scan.nextInt();
+        int nums[][] = new int[x][x];
+        for (int i = 0; i < x; i++) {
+            nums[i][0] = i;
+            nums[0][i] = i;
+        }
+        for (int s = 1; s < x; s++) {
+            for (int a = 1; a < x; a++) {
+                nums[s][a] = s * a;
+            }
+        }
+        for (int g = 0; g < x; g++) {
+            for (int h = 0; h < x; h++) {
+                System.out.print(nums[g][h] + " ");
+            }
+            System.out.println();
+        }
+*/
+        //16.1
+/*
+        int x = scan.nextInt();
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+*/
+        //16.2
+/*
+        int x = scan.nextInt();
+        for (int i = x; i > 0; i--) {
+            for (int j = i; j > 0; j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+*/
+        //16.3
+/*
+        int x = scan.nextInt();
+        for (int i = x; i > 0; i--) {
+            for (int r = 0; r < x - i; r++) {
+                System.out.print(" ");
+            }
+            for (int j = i; j > 0; j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+*/
+        //16.4
+/*
+        int x = scan.nextInt();
+        for (int i = 0; i < x; i++) {
+
+            for (int r = x - i - 1; r > 0; r--) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+*/
+
     }
+}
