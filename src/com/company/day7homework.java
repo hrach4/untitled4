@@ -107,7 +107,25 @@ public class day7homework {
         }
         System.out.print(s);
 */
-        //10?
+        //10
+/*
+        Scanner scanner = new Scanner(System.in);
+        int binary = scanner.nextInt();
+        int x = binary;
+        int n = 0;
+        int decimal = 0;
+        while (x != 0) {
+            x /= 10;
+            ++n;
+        }
+        int z;
+        for (int i = 0; i < n; i++) {
+            z = binary % 10;
+            binary /= 10;
+            decimal += (z * Math.pow(2, i));
+        }
+        System.out.println(decimal);
+*/
         //11
 /*
         int n = scan.nextInt(), positive = 0, negative = 0, zero = 0;
