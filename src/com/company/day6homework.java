@@ -101,7 +101,15 @@ int x=1,c=0;
 System.out.print(c);
 */
 
-        //10?
+        //10
+/*
+        for (int i = 33; i <= 123; i++) {
+            System.out.print((char) (i - 1));
+            if ((i - 2) % 10 == 0) {
+                System.out.println();
+            }
+        }
+*/
         //11
 /*
         int x = 0, i = scan.nextInt();
@@ -111,6 +119,66 @@ System.out.print(c);
             }
             x++;
         }
+*/
+        //12
+/*
+        System.out.println("enter your number");
+        int k = 0, num = 1, c = 1, z = 0, a = scan.nextInt();
+        for (int i = 1; z <= a; i++) {
+            z = k + c;
+            k = c;
+            c = z;
+            num++;
+            if (z == a) {
+                System.out.println(num);
+                break;
+            }
+            if (z > a) {
+                System.out.println("your number is not a Fibonacci number");
+            }
+        }
+*/
+        //13
+/*
+        System.out.println("enter x and y");
+        double x = scan.nextInt(), y = scan.nextInt(), k = 0;
+        for (double i = x; i < y; i = i * 110 / 100) {
+            k++;
+        }
+        System.out.println(k + 1);
+*/
+        //14
+/*
+        System.out.println("enter x p y");
+        int x = scan.nextInt(), p = scan.nextInt(), y = scan.nextInt(), k = 0;
+        for (int i = x; i < y; i = i + (i * p / 100)) {
+            k++;
+        }
+        System.out.println(k);
+*/
+        //15
+/*
+        System.out.println("enter your numbers and then enter");
+        int c = 0, v = 0;
+        int[] nums = new int[10000];
+        for (int i = 0; i < 10000; i++) {
+            int k = scan.nextInt();
+            if (k == 0) {
+                break;
+            }
+            nums[i] = k;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > c) {
+                c = nums[i];
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > v && nums[i] != c) {
+                v = nums[i];
+            }
+        }
+        System.out.println(v);
 */
         //16
 /*
@@ -142,6 +210,7 @@ System.out.print(c);
         }
         System.out.println(l);
 */
+
 
     }
 }

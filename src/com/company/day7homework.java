@@ -19,6 +19,10 @@ public class day7homework {
         //2
 /*
         int a = scan.nextInt(), b = scan.nextInt(), c = scan.nextInt(), d = scan.nextInt();
+        if (d == 0) {
+            System.out.println("d cannot be 0  !!!");
+            System.exit(0);
+        }
         for (int i = a; i <= b; i++) {
             if (i % d == c) {
                 System.out.println(i);
@@ -62,7 +66,10 @@ public class day7homework {
             k *= 10;
         }
         for (int v = 0; v < str.length(); v++) {
-            System.out.println(nums[v]);
+            if (v == 0 && nums[0] == 0) {
+                continue;
+            }
+            System.out.print(nums[v]);
         }
 */
         //6

@@ -165,7 +165,39 @@ public class day8homework {
         }
 */
         //13
+/*
+        int[] nums = {13, 29, 63, 92, 62, 14, 4, 233, 19, 6, 10, 655, 42, 37,};
+        int numofmin = 0, numofmax = 0, k = nums[0];
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] < k) {
+                k = nums[i];
+                numofmin = i;
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > k) {
+                k = nums[i];
+                numofmax = i;
+            }
+        }
+        nums[numofmax] = nums[numofmin];
+        nums[numofmin] = k;
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+        }
+*/
+        //14
 
+        int[] nums = {13, 29, 63, 92, 62, 14, 4, 233, 19, 6, 10, 655, 42, 37,};
+        System.out.println("enter the number of the item what you wont to remove");
+        int indexofremove = scan.nextInt();
+        for (int i = indexofremove; i < nums.length - 1; i++) {
+            nums[i] = nums[i + 1];
+        }
+        nums = new int[nums.length - 1];
 
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println(nums[i]);
+        }
     }
 }
