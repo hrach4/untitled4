@@ -18,7 +18,7 @@ public class day8homework {
             }
         }
 */
-        //2 dinamik array chenq ancel :)
+        //2
 
         //3
 /*
