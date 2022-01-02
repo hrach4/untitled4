@@ -195,18 +195,17 @@ public class day8homework {
             System.out.println(nums[i]);
         }
 */
-        //14?????????????????????????????
+        //14
 /*
         int[] nums = {13, 29, 63, 92, 62, 14, 4, 233, 19, 6, 10, 655, 42, 37,};
-        System.out.println("enter the number of the item what you wont to remove");
-        int indexofremove = scan.nextInt();
+        Mymethods.showarray(nums);
+        System.out.println("<-- enter the number of the item wich you wont to remove");
+        int indexofremove = scan.nextInt() - 1;
         for (int i = indexofremove; i < nums.length - 1; i++) {
             nums[i] = nums[i + 1];
         }
-        nums = new int[nums.length - 1];
-
-        for (int i = 0; i < nums.length; i++) {
-            System.out.println(nums[i]);
+        for (int i = 0; i < nums.length - 1; i++) {
+            System.out.print(nums[i] + " ");
         }
 */
         //15
