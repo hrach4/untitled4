@@ -18,6 +18,12 @@ public class Mymethods {
         }
     }
 
+    public static void showarray(String array[]) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
     public static int[] splittodigits(int a) {
         int k = 10, c = 0, l = 0;
         String str = String.valueOf(a);
@@ -29,5 +35,15 @@ public class Mymethods {
             arr[i] = c;
         }
         return arr;
+    }
+
+    public static int faktoryal(int a) {
+        if (a == 1) return 1;
+        return a * faktoryal(a - 1);
+    }
+
+    public static int faktorial(int a) {
+        if (a == 1) return 1;
+        else return a * faktorial(a - 1);
     }
 }
